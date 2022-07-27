@@ -1,0 +1,65 @@
+@use "../abstract/" as *;
+@use "../util/" as *;
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  padding: 2.1rem 4rem;
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__logo-container {
+    width: 8.4rem;
+    height: 2.7rem;
+
+    .header__logo {
+      display: inline-block;
+      width: 100%;
+      min-width: 8.4rem;
+      min-height: 2.7rem;
+      @include cover-background("./assets/logo.svg");
+    }
+  }
+
+  .header__menu-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: {
+      left: 6.2rem;
+      right: 6.2rem;
+    }
+    font-size: $font-size-100;
+
+    .header-menu {
+      &:not(:last-child) {
+        margin-right: 3.9rem;
+      }
+
+      .header-nav-link {
+        transition: color 200ms ease;
+
+        &:hover {
+          color: $color-text-dark;
+        }
+      }
+    }
+  }
+
+  .header__button-container {
+    display: flex;
+    font-size: $font-size-100;
+
+    .button:not(:last-child) {
+      margin-right: 0.7rem;
+    }
+  }
+}
