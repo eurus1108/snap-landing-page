@@ -1,0 +1,10 @@
+@use "../abstract/" as *;
+
+$font-family-default: "Epilouge", sans-serif;
+$font-size-100: var(--font-size-100);
+$font-size-200: var(--font-size-200);
+$font-size-300: var(--font-size-300);
+$font-size-400: var(--font-size-400);
+$font-size-500: var(--font-size-500);
+$font-weight-bold: var(--font-weight-bold);
+$font-weight-medium: var(--font-weight-medium);

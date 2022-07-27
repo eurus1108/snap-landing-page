@@ -1,0 +1,10 @@
+@use "../abstract/" as *;
+
+$color-text-default: var(--color-neutral-300);
+$color-text-dark: var(--color-neutral-400);
+$color-text-light: var(--color-neutral-100);
+$color-background-default: var(--color-neutral-200);
+$color-background-dark: var(--color-neutral-400);
+$color-background-light: var(--color-neutral-100);
+$color-border-default: var(--color-neutral-300);
+$color-border-dark: var(--color-neutral-400);
