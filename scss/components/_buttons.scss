@@ -1,0 +1,27 @@
+@use "../util/" as *;
+
+.header-menu-dropdown {
+  display: flex;
+  align-items: center;
+  font-size: inherit;
+  color: $color-text-default;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 300ms ease-in;
+
+  svg {
+    margin-left: 0.8rem;
+  }
+
+  path {
+    transition: stroke 300ms ease-in;
+  }
+
+  &:hover,
+  &:hover path {
+    color: $color-text-dark;
+    stroke: $color-background-dark;
+  }
+}
