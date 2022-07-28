@@ -3,7 +3,12 @@
 body {
   font-family: "Epilogue", sans-serif;
   font-size: $font-size-300;
-  color: $color-text-default;
   font-weight: $font-weight-medium;
+  color: $color-text-default;
   background-color: $color-background-default;
+}
+
+ul,
+li {
+  list-style: none;
 }
