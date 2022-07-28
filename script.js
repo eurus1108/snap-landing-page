@@ -12,5 +12,11 @@ dropDownButton.forEach((elm) => {
         target.classList.remove("header-menu-dropdown--active");
       }
     });
+
+    if (elm.classList.contains("header-menu-dropdown--active")) {
+      dropDownItem.forEach((target) => {
+        target.classList.toggle("show");
+      });
+    }
   });
 });
