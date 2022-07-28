@@ -24,10 +24,6 @@
     color: $color-text-dark;
     stroke: $color-background-dark;
   }
-
-  &.header-menu-dropdown--active + .header-menu-collapse {
-    display: block;
-  }
 }
 
 .button {

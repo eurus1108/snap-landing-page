@@ -63,6 +63,10 @@
         background-color: $color-background-light;
         border-radius: 1.4rem;
         box-shadow: 0 5px 40px 5px hsla(0, 0%, 8%, 0.15);
+
+        &.show {
+          display: block;
+        }
       }
 
       &:nth-child(2) {
