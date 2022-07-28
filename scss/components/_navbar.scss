@@ -40,6 +40,8 @@
     font-size: $font-size-100;
 
     .header-menu {
+      position: relative;
+
       &:not(:last-child) {
         margin-right: 3.9rem;
       }
@@ -50,6 +52,48 @@
         &:hover {
           color: $color-text-dark;
         }
+      }
+
+      .header-menu-collapse {
+        position: absolute;
+        top: 3.5rem;
+        right: 0;
+        display: none;
+        padding: 2.4rem;
+        background-color: $color-background-light;
+        border-radius: 1.4rem;
+        box-shadow: 0 5px 40px 5px hsla(0, 0%, 8%, 0.15);
+      }
+
+      &:nth-child(2) {
+        .header-menu-collapse {
+          left: 0;
+          width: 11.6rem;
+          padding: {
+            top: 2.5rem;
+            bottom: 2.5rem;
+          }
+        }
+
+        .header-item:not(:last-child) {
+          margin-bottom: 1.8rem;
+        }
+      }
+
+      .header-item:not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+
+      .header-nav-link {
+        display: flex;
+      }
+
+      .header-img-container {
+        display: flex;
+        justify-content: center;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 1.5rem;
       }
     }
   }
