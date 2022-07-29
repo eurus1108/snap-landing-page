@@ -22,7 +22,14 @@ dropDownButton.forEach((elm) => {
 });
 
 const hamburgerMenu = document.querySelector(".header__menu-container");
+const sideBar = document.querySelector(".sidebar");
 
 hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("header__menu-container--active");
+
+  if (hamburgerMenu.classList.contains("header__menu-container--active")) {
+    sideBar.classList.add("sidebar--active");
+  } else {
+    sideBar.classList.remove("sidebar--active");
+  }
 });
