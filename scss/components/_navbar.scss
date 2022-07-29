@@ -137,8 +137,11 @@
     height: 1.8rem;
     background: none;
     border: none;
-    overflow: hidden;
     cursor: pointer;
+
+    @include breakpoint-up(large) {
+      display: none;
+    }
 
     &:focus {
       outline: none;
@@ -176,8 +179,6 @@
 
     &.header__menu-container--active {
       margin: 0;
-      height: 2.6rem;
-      transform: translateY(-0.3rem);
 
       .header__hamburger {
         background-color: transparent;
