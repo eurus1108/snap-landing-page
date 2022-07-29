@@ -13,7 +13,9 @@
   transition: color 200ms ease;
 
   svg {
-    margin-left: 0.8rem;
+    margin: {
+      left: 0.8rem;
+    }
   }
 
   path {
