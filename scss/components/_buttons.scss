@@ -1,6 +1,7 @@
 @use "../util/" as *;
 
-.header-menu-dropdown {
+.header-menu-dropdown,
+.sidebar-menu-dropdown {
   display: flex;
   align-items: center;
   font-size: $font-size-100;

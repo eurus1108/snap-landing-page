@@ -20,3 +20,9 @@ dropDownButton.forEach((elm) => {
     }
   });
 });
+
+const hamburgerMenu = document.querySelector(".header__menu-container");
+
+hamburgerMenu.addEventListener("click", () => {
+  hamburgerMenu.classList.toggle("header__menu-container--active");
+});
