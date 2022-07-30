@@ -32,3 +32,24 @@ hamburgerMenu.addEventListener("click", () => {
     modalOverlay.classList.add("hidden");
   }
 });
+
+const sidebardropDownButton = document.querySelectorAll(
+  ".sidebar-menu-dropdown"
+);
+const sidebardropDownItem = document.querySelectorAll(".sidebar-menu-collapse");
+
+sidebardropDownButton.forEach((elm) => {
+  elm.addEventListener("click", (e) => {
+    const clickedBtn = e.target;
+
+    clickedBtn.classList.toggle("sidebar-menu-dropdown--active");
+    clickedBtn.nextElementSibling.classList.toggle("show");
+
+    sidebardropDownButton.forEach((target) => {
+      if (target !== clickedBtn) {
+        target.classList.remove("sidebar-menu-dropdown--active");
+        target.nextElementSibling.classList.remove("show");
+      }
+    });
+  });
+});
