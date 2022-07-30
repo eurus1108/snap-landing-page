@@ -111,44 +111,92 @@
           </button>
         </nav>
       </header>
-      <div class="sidebar">
+      <div class="sidebar sidebar--active">
         <nav class="sidebar__container">
-          <div class="sidebar__element">
-            <div class="sidebar-menu">
-              <button class="sidebar-menu-dropdown">
-                Features
-                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    stroke="#686868"
-                    stroke-width="1.5"
-                    fill="none"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
+          <div class="sidebar-menu">
+            <button class="sidebar-menu-dropdown">
+              Features
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+            <div class="sidebar-menu-collapse">
+              <ul class="sidebar-list">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-nav-link">
+                    <div class="sidebar-img-container">
+                      <img src="./assets/icon-todo.svg" alt="" />
+                    </div>
+                    Todo List
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-nav-link">
+                    <div class="sidebar-img-container">
+                      <img src="./assets/icon-calendar.svg" alt="" />
+                    </div>
+                    Calendar
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-nav-link">
+                    <div class="sidebar-img-container">
+                      <img src="./assets/icon-reminders.svg" alt="" />
+                    </div>
+                    Reminders
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-nav-link">
+                    <div class="sidebar-img-container">
+                      <img src="./assets/icon-planning.svg" alt="" />
+                    </div>
+                    Planning
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="sidebar-menu">
-              <button class="sidebar-menu-dropdown">
-                Company
-                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    stroke="#686868"
-                    stroke-width="1.5"
-                    fill="none"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
+          </div>
+          <div class="sidebar-menu">
+            <button class="sidebar-menu-dropdown">
+              Company
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+            <div class="sidebar-menu-collapse">
+              <ul class="sidebar-list">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-nav-link">History</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-nav-link">Our Team</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-nav-link">About</a>
+                </li>
+              </ul>
             </div>
-            <div class="sidebar-menu">
-              <a href="#" class="sidebar-nav-link">Careers</a>
-            </div>
-            <div class="sidebar-menu">
-              <a href="#" class="sidebar-nav-link">About</a>
-            </div>
+          </div>
+          <div class="sidebar-menu">
+            <a href="#" class="sidebar-nav-link">Careers</a>
+          </div>
+          <div class="sidebar-menu">
+            <a href="#" class="sidebar-nav-link">About</a>
           </div>
         </nav>
       </div>
+      <div class="modal--overlay hidden"></div>
     </main>
   </body>
   <script src="./script.js"></script>
