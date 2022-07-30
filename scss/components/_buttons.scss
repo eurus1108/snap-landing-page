@@ -1,3 +1,4 @@
+@use "../abstract/" as *;
 @use "../util/" as *;
 
 .header-menu-dropdown,
@@ -79,6 +80,10 @@
   border-radius: 1.4rem;
   transition: all 200ms ease;
 
+  @include breakpoint-down(small) {
+    border-radius: 1.5rem;
+  }
+
   &:hover {
     color: $color-text-dark;
   }
@@ -88,6 +93,39 @@
 
     &:hover {
       border-color: $color-border-dark;
+    }
+  }
+
+  &--solid {
+    padding: {
+      top: 1.9rem;
+      bottom: 1.7rem;
+    }
+    width: 16.3rem;
+    font-size: $font-size-300;
+    font-weight: $font-weight-bold;
+    line-height: 1.8rem;
+    @include letter-spacing(-1);
+    color: $color-text-light;
+    background: $color-background-dark;
+    border: 1px solid $color-border-dark;
+
+    &:hover {
+      color: $color-text-dark;
+      background-color: $color-background-light;
+    }
+
+    @include breakpoint-down(medium) {
+      @include center-block;
+    }
+
+    @include breakpoint-down(small) {
+      padding: {
+        top: 1.4rem;
+        bottom: 1.4rem;
+      }
+      max-width: 13.6rem;
+      font-size: $font-size-200;
     }
   }
 }
