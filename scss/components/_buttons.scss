@@ -30,6 +30,44 @@
   }
 }
 
+.header-menu-dropdown {
+  &.header-menu-dropdown--active {
+    color: $color-text-dark;
+
+    svg {
+      transform: rotate(180deg);
+    }
+
+    path {
+      stroke: $color-background-dark;
+    }
+  }
+}
+
+.sidebar-menu-dropdown {
+  font-size: inherit;
+  line-height: 1.6rem;
+  cursor: pointer;
+
+  svg {
+    margin: {
+      left: 1.5rem;
+    }
+  }
+
+  &.sidebar-menu-dropdown--active {
+    color: $color-text-dark;
+
+    svg {
+      transform: rotate(180deg);
+    }
+
+    path {
+      stroke: $color-background-dark;
+    }
+  }
+}
+
 .button {
   display: block;
   padding: 1.3rem 1.4rem;
