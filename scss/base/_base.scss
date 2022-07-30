@@ -6,6 +6,10 @@ body {
   font-weight: $font-weight-medium;
   color: $color-text-default;
   background-color: $color-background-default;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 ul,

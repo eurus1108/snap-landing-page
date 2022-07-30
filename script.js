@@ -20,6 +20,7 @@ dropDownButton.forEach((elm) => {
 const hamburgerMenu = document.querySelector(".header__menu-container");
 const sideBar = document.querySelector(".sidebar");
 const modalOverlay = document.querySelector(".modal--overlay");
+const body = document.querySelector("body");
 
 hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("header__menu-container--active");
@@ -27,9 +28,11 @@ hamburgerMenu.addEventListener("click", () => {
   if (hamburgerMenu.classList.contains("header__menu-container--active")) {
     sideBar.classList.add("sidebar--active");
     modalOverlay.classList.remove("hidden");
+    body.classList.add("no-scroll");
   } else {
     sideBar.classList.remove("sidebar--active");
     modalOverlay.classList.add("hidden");
+    body.classList.remove("no-scroll");
   }
 });
 
